@@ -1,26 +1,57 @@
+.sections--heading {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+}
+
 .education--section {
-    display: flex;
-    padding: 112px 84.3px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-    background-color: #2c3e50;
-  } 
-  .sections--heading {
-    color: var(--heading-color);
-  }
-  .education--section--card {
-    display: flex;
-    padding: 30px;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 30px;
-    border-radius: 8px;
-    border: 1px solid #006b6a;
-  }
-  .education--section--card--reviews {
-    display: flex;
-    align-items: flex-start;
-    gap: 5.33px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: lightgray;
+}
+
+.education--section--container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.education--section--card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #006b6a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.education--section--card--content {
+  flex: 1;
+}
+
+.education--section--card h3 {
+  margin: 0;
+  font-size: 1.0em;
+  color: #006b6a;
+}
+
+.education--section--card h2 {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.education--logo {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+}

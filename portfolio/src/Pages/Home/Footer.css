@@ -6,6 +6,7 @@
     background: var(--bg-shade);
     align-items: center;
     align-self: stretch;
+    background-color: rgba(83, 39, 39, 0.292)  ;
   }
   .footer--link--container {
     display: flex;

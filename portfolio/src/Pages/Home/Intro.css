@@ -1,35 +1,44 @@
-.intro--section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 30px 30.333px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  background-color: #2c3e50;
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20;
+  }
+  
+  .intro--section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 70px;
+    gap: 20px;
+    background-color: #f4f4f4;
   }
   
   .intro--section--content--box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
   }
   
   .intro--section--content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 21.333px;
+    gap: 5px;
   }
   
   .section--title {
-    font-size: 24px;
+    font-size: 1em;
     font-weight: bold;
+    color: #333;
+    margin: 0;
   }
   
   .intro--section--title {
-    font-size: 36px;
+    font-size: 0.8em;
     color: #333;
+    margin: 0;
   }
   
   .intro--section-title--color {
@@ -37,18 +46,58 @@
   }
   
   .intro--section-description {
-    font-size: 15px;
+    font-size: 0.8em;
     color: #666;
+    line-height: 1.6;
+    max-width: 600px;
   }
   
   .intro--section--img {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   
   .intro--section--img img {
     max-width: 50%;
     height: auto;
     border-radius: 10px;
+    padding-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .intro--section--img img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .intro--section {
+      grid-template-columns: 1fr;
+      padding: 80px 20px 80px 90px;
+    }
+  
+    .intro--section--img img {
+      
+      max-width: 60%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .intro--section {
+        padding: 80px 20px 80px 90px;
+    }
+  
+    .section--title {
+      font-size: 1.2em;
+    }
+  
+    .intro--section--title {
+      font-size: 1.5em;
+    }
+  
+    .intro--section-description {
+      font-size: 0.9em;
+    }
   }
   
