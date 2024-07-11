@@ -26,7 +26,7 @@ const skills = [
 const SkillSet = () => {
   return (
     <div>
-      <h2 className="skills-title">Skills</h2>
+      <h2 className="skills-title">Skillset</h2>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill">
