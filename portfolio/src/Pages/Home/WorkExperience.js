@@ -36,8 +36,8 @@ const workExperiences = [
 
 const WorkExperience = () => {
   return (
-    <div>
-    <h2>Work Experience</h2>
+    <section className="work-experience-section" id="workexperience">
+    <h2 className="work-experience-title">Work Experience</h2>
     <div className="work-experience-grid">
       {workExperiences.map((experience, index) => (
         <div className="work-experience-card" key={index}>
@@ -47,7 +47,7 @@ const WorkExperience = () => {
         </div>
       ))}
     </div>
-    </div>
+    </section>
   );
 };
 
