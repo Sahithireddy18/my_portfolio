@@ -107,6 +107,20 @@ function Navbar() {
               Education
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="volunteerWork"
+              className="navbar--content"
+            >
+              Volunteer Work
+            </Link>
+          </li>
         </ul>
       </div>
       <button onClick={openModal} className="navbar--content">
