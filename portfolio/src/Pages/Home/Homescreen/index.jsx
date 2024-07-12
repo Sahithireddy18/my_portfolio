@@ -4,6 +4,7 @@ import Education from "../Education";
 import WorkExperience from '../WorkExperience';
 import SkillSet from '../SkillSet';
 import Footer from "../Footer";
+import VolunteerWork from "../VolunteerWork";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <WorkExperience />
       <SkillSet />
       <Education />
+      <VolunteerWork />
       <Footer />
     </>
   );
