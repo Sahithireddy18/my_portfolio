@@ -5,12 +5,14 @@ import WorkExperience from '../WorkExperience';
 import SkillSet from '../SkillSet';
 import Footer from "../Footer";
 import VolunteerWork from "../VolunteerWork";
+import AboutMe from "../AboutMe";
 
 export default function Home() {
   return (
     <>
       <Intro />
       <Skills />
+      <AboutMe />
       <WorkExperience />
       <SkillSet />
       <Education />

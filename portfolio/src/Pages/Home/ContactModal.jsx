@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
+import emailjs from 'emailjs-com';
 import './ContactModal.css'; 
+
 Modal.setAppElement('#root');
 
 const ContactModal = ({ isOpen, onRequestClose }) => {
@@ -11,10 +13,26 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    onRequestClose();
+
+    console.log("process.env.REACT_APP_EMAILJS_SERVICE_I", process.env.REACT_APP_EMAILJS_SERVICE_ID)
+
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      e.target,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
+      alert('Email successfully sent!', result.text);
+      onRequestClose();
+    }, (error) => {
+      console.error('Error sending email:', error.text);
+    });
+
+    setFormData({ name: '', email: '', message: '' }); 
   };
 
   return (
@@ -27,6 +45,8 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
     >
       <button className="modal-close-button" onClick={onRequestClose}>&times;</button>
       <h2 className="modal-header">Contact Me</h2>
+      <p className="modal-text"> Please include your details to send an email.</p>
+      
       <form className="modal-form" onSubmit={handleSubmit}>
         <div>
           <label>Name</label>
@@ -57,7 +77,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
       </form>
     </Modal>
   );

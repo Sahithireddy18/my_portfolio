@@ -22,9 +22,12 @@ export default function Introduction() {
            
           </h1>
           <p className="intro--section-description">
-            
-            Hey there! I'm a passionate Software Developer with hands-on experience at industry giants like NCR and Walmart. My journey in the tech world has taken me through a diverse landscape of technologies, from the dynamic realms of React, Node.js, Springboot to the structured depths of Java, Python, and C++.
-            I’m on a mission to explore, learn, and create, pushing the boundaries of what technology can achieve. I'm all about making tech that truly matters.
+          Hello there! I'm a passionate Software Developer with extensive hands-on experience across a diverse range of technologies.
+ 
+          Driven by curiosity and a mission to push technological boundaries, I create innovative solutions that make a real difference in the world. I believe in the transformative power of technology to solve problems, improve lives, and create lasting impact.
+
+With a commitment to meaningful innovation, I dedicate myself to developing tech that truly matters and giving my best to every solution I create.
+
           </p>
         </div>
       </div>

@@ -59,7 +59,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="heroSection"
+              to="intro--section"
               className="navbar--content"
             >
               Home
@@ -87,12 +87,42 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
+              to="AboutMe"
+              className="navbar--content"
+            >
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               to="workexperience"
               className="navbar--content"
             >
               Work Experience
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="skillset"
+              className="navbar--content"
+            >
+              Skill Set 
+            </Link>
+          </li>
+
+
           <li>
             <Link
               onClick={closeMenu}

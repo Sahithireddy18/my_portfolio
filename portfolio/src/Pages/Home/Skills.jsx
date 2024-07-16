@@ -4,8 +4,8 @@ import './Skills.css';
 export default function Skills() {
   return (
     <section className="skills--section" id="mySkills">
+       <h2 className="section--title">Skills</h2>
       <div className="portfolio--container">
-        <h2 className="section--title">My Skills</h2>
       </div>
       <div className="skills--section--container">
         <div className="skills--section--card">
