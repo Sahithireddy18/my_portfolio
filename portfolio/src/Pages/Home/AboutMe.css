@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: f0f0f0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .animated-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animated-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .essay {
+    max-width: 600px;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .essay p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  

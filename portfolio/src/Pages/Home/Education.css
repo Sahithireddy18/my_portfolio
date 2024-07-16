@@ -2,7 +2,6 @@
   text-align: center;
   padding: 20px;
   margin: 0;
-  color: #333;
 }
 
 .education--section {
@@ -10,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
-  background-color: lightgray;
+  background-color: f0f0f0;
 }
 
 .education--section--container {

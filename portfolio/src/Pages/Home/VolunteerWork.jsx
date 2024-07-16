@@ -19,8 +19,9 @@ export default function VolunteerWork() {
 
   return (
     <section className="volunteer--section" id="volunteerWork">
+      <h2 className="section--title">Volunteer Work</h2>
       <div className="portfolio--container">
-        <h2 className="section--title">Volunteer Work</h2>
+        
       </div>
       <div className="volunteer--section--container">
         {volunteerExperiences.map((experience, index) => (
