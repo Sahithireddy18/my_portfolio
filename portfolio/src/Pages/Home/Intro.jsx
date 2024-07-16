@@ -7,7 +7,7 @@ export default function Introduction() {
     <section id="introSection" className="intro--section">
       <div className="intro--section--content--box">
         <div className="intro--section--content">
-          <p className="section--title">Hey, I'm Sahithi</p>
+          <p className="section--title">Hey, I'm Sahithi Reddy</p>
           <h1 className="intro--section--title">
 
           <Typical
@@ -22,18 +22,26 @@ export default function Introduction() {
            
           </h1>
           <p className="intro--section-description">
-          Hello there! I'm a passionate Software Developer with extensive hands-on experience across a diverse range of technologies.
- 
-          Driven by curiosity and a mission to push technological boundaries, I create innovative solutions that make a real difference in the world. I believe in the transformative power of technology to solve problems, improve lives, and create lasting impact.
-
-With a commitment to meaningful innovation, I dedicate myself to developing tech that truly matters and giving my best to every solution I create.
-
+          
+         
+         <Typical
+              steps={[
+                " 'Engineering is the closest thing to magic that exists in the world. - Elon Musk'",
+                 1000,
+                ]}
+              loop={Infinity}
+              wrapper="span"
+              className="intro--section-title--color--grey"
+            />
           </p>
+          <p> My journey into engineering is driven by a mindset of innovation, creativity, and the relentless pursuit of excellence. Engineering, to me, is about seeing the world as it could be and bridging that gap through technology. Beyond coding, I cherish collaborating with others, mentoring aspiring developers, and sharing knowledge. I believe in the power of community and continuous learning. As a Software Engineer, my mission is to create solutions that matter, inspire others to see their potential, and push the boundaries of what we can achieve.</p>
+          
         </div>
       </div>
       <div className="intro--section--img">
         <img src="./img/my_pic.jpg" alt="Intro Section" />
       </div>
+     
     </section>
   );
 }
