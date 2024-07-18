@@ -11,7 +11,7 @@ const workExperiences = [
   {
     role: 'Graduate Research Assistant',
     company: 'UMBC',
-    description: 'I designed and developed a sophisticated multiplayer game featuring advanced real-time capabilities, leveraging WebSockets for seamless bidirectional communication. This technology enabled the transmission of a wide range of in-game events among multiple players, ensuring a smooth and immersive gaming experience. In addition to my development work, I served as an educator for the Data Visualization and Computer Networks course, where I was responsible for grading assignments and providing feedback to students.',
+    description: "I designed and developed a sophisticated multiplayer game featuring advanced real-time capabilities, leveraging WebSockets for seamless bidirectional communication. This technology enabled the transmission of a wide range of in-game events among multiple players, ensuring a smooth and immersive gaming experience. In addition to my development work, I served as an educator for the 'Data Structures and Algorithms' course, where I was responsible for grading assignments and providing feedback to students.",
     logo: './img/umbc_logo.png'
   },
   {
